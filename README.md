@@ -32,7 +32,11 @@ output {
 Now run bin/logstash -f logstash.conf to start logstash
 
 4) For this project, you need to change logstash.conf file. please add below lines of code to logstash.conf file
-{code}
+
+
+
+
+
 input {
   file {
     type => "java"
@@ -68,7 +72,7 @@ output {
   }
 }
 
-{code}
+
 
 I have added this file to project level. You can refer:
 
