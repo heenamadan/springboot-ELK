@@ -20,14 +20,15 @@ Once started successfully, Kibana will start on default port 5601 and Kibana UI 
 Download the latest distribution from download page and unzip into any folder.
 Create one file logstash.conf under bin folder
 then paste below line of codes:
-{code}
+
+
+
 input { stdin { } }
 output {
   elasticsearch { hosts => ["localhost:9200"] }
   stdout { codec => rubydebug }
 }
 
-{code}
 
 Now run bin/logstash -f logstash.conf to start logstash
 
